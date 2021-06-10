@@ -1,0 +1,326 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container
+{
+	max-width: 1000px;
+	margin: auto;
+	border: solid 1px black;
+
+}
+p
+{
+	text-align: justify;
+}
+/*------------------------vue de la maquette en général----------------------*/
+.full-main,
+aside,
+main
+{
+	display: flex;
+}
+aside,
+.portrait 
+{
+	color: #FDFEFE;
+	 width: 30%;
+	 min-width: 250px;
+     background-color: #1B2631;
+	 flex-direction: column;
+	 justify-content: space-between;
+}
+ main
+{
+    width: 70%;
+	flex-direction: column;
+}
+a{
+	color: #FDFEFE;
+	text-decoration: none;
+}
+ /*------------------------Header----------------------------------*/
+ header
+{
+ 	display: flex;
+}
+.portrait
+{
+    text-align: center;
+    background-color: #1B2631;
+}
+  img
+{
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	border-color: #FDFEFE ;
+	border-style: solid;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.titre
+{
+	width: 70%;
+	margin-top: 40px;
+}
+h1
+{
+	font-weight: bold;
+	text-align: left;
+	margin-left: 35px;
+	color: #1B2631;
+}
+span.prenom
+{
+	color:#1B2631;
+}
+h2
+{
+ 	color: #1B2631;
+	text-align: left;
+	margin-left: 35px;
+	position: relative;
+}
+h2::before
+{
+	content:'';
+	display: block;
+	height: 2px;
+	width: 60px;
+	left: 0;
+	background-color: #1B2631;
+	bottom: 0;
+	position: absolute;
+}
+/*--------------------------Aside------------------------------*/
+aside i{
+	margin-right: 5px;
+	font-size: medium;
+	width: 20px;
+	text-align: center;
+}
+aside p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.contact
+{
+     margin-bottom: 10px;
+}
+aside h3
+{
+	text-align: center;
+	margin: 0;
+}
+.elements-contact
+{
+	margin-left: auto;
+	padding: 5px;
+}
+.moi
+{
+    flex: 2;
+}
+ .loisirs{
+    margin-top: 10px;
+	margin-bottom: 10px;
+}
+.langues ul{
+	list-style-type: circle;
+}
+.langue{
+	font-weight: bold;
+}
+.langues li, .loisirs li{
+	margin-bottom: 10px;
+}
+.loisirs ul{
+	list-style-type: none;
+}
+.titre-aside
+{
+ 	color: #FDFEFE;
+    text-align: center;
+    text-transform: uppercase;
+	text-decoration: underline;
+}
+.elements-contact
+{
+	text-align: left;
+	margin-left: 15px;
+}
+.elements-moi
+{
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: justify;
+}
+
+/*----------------------------------------Main--------------------------------------*/
+.icon-main
+{
+	color: #1B2631;
+	margin-right: 10px;
+}
+.compétence{
+	font-weight: bold;
+}
+.main2{
+	display: flex;
+}
+.titre-main{
+	margin-bottom: 20px;
+}
+.main1{
+	padding-left: 20px;
+}
+.main1 ul{
+	padding-left: 80px;
+	font-size: medium;
+}
+.main2 .titre-main{
+	font-size: medium;
+	margin-top: 20px;
+}
+.diplome, .experience{
+	padding-left: 20px;
+}
+h4, p, h5
+{
+	margin: 0;
+}
+.element{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+h3
+{
+	text-align: center;
+	border-bottom: solid 3px #1B2631;
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+/*-------------------------------------------Responsive--------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 650px)
+{
+	header
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.titre
+	{
+		margin: auto;
+	}
+	
+	img
+	{
+		width: 30%;
+	}
+	h1,
+	h2
+	{
+		text-align: center;
+		margin-left: 0;
+	}
+	h2::before
+	{
+		display: none;
+	}
+	aside,
+	main,
+	.portrait,
+	.container,
+	.titre
+	{
+		width: auto;
+	}
+	.main2{
+		display: block;
+	}
+	.main2 p, .main2 h4{
+		text-align: center;
+	}
+	.portrait
+	{
+		align-items: center;
+	}
+	.full-main
+	{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	h3,
+	ul
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.titre-main,
+	.date,
+	.infos
+	{
+		text-align: center;
+	}
+	main p
+	{
+		text-align: justify;
+		margin-right: 0;
+		padding-left: 10px;
+	}
+	.periode
+	{
+		flex-grow: 1;
+		margin-right: 30px;
+	}
+	.infos
+	{
+
+		margin: auto;
+		margin-top: 5px;
+	}
+	.recommandation-professionnelle
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.professionnel
+	{
+		margin-left:  5px;
+	}
+	ul
+	{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	li
+	{ 
+		flex-direction: column;
+	}
+	.icon-main
+	{
+		display: none;
+	}
+	.date,
+	.infos
+	{
+		width: 100%;
+	}
+	.date
+	{
+		margin-bottom: 10px;
+	}
+	.loisirs
+	{ 
+		text-align: center;
+	}
+	
+}
